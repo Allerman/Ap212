@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--linkando o css com o html-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+
+
+<body>
+<div class="conteudo">
+
+    <!--elementos para adicionar nova tarefa-->
+        <div class="topo">
+            
+            <input type="text" 
+                id="inputNovaTarefa"
+                placeholder="Adicionar">
+
+                <button id="btnAddTarefa">
+                    <!--icon-->
+                    <i class="bi bi-plus-lg"></i>
+                </button>
+        </div>
+
+
+        <!--lista de tarefas-->
+     <ul id="listaTarefa"></ul>
+
+</div>
+
+    <!--vinculando o codigo js com o html-->
+    <script src="JS/tarefas.js"></script>
+
+</body>
+</html>
