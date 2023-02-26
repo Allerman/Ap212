@@ -1,6 +1,10 @@
 let inputNovaTarefa = document.querySelector('#inputNovaTarefa');
 let btnAddTarefa = document.querySelector('#btnAddTarefa');
 let listaTarefa = document.querySelector('#listaTarefa');
+let btnSairEdicao = document.querySelector('#btnSairEdicao');
+let btnAtualizarTarefa = document.querySelector('#btnAtualizarTarefa');
+let tarefaEdicao = document.querySelector('#tarefaEdicao');
+let inputTarefaNomeEdicao = document.querySelector('#inputTarefaNomeEdicao');
 
 //adicionar tarefa
 inputNovaTarefa.addEventListener('keypress',(e)=>{
@@ -14,17 +18,27 @@ inputNovaTarefa.addEventListener('keypress',(e)=>{
     } 
 })
 
+btnSairEdicao.addEventListener('click',(e)=>{alterarJanelaEdicao();})
 
-//botao de adicionar
+btnAtualizarTarefa.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let idTarefa = idtarefaEdicao.innerHTML.replace('#','');
+
+    let tarefa = {
+
+    }
+
+
+
+
+})
+
 btnAddTarefa.addEventListener('click', (e) => {
     let tarefa={ 
         nome: inputNovaTarefa.value,
         id: gerarid(),
     }
-//chamando funçao
-    adicionarTarefa(tarefa);
-
-})
+        adicionarTarefa(tarefa);})
 
 
 function adicionarTarefa(tarefa){
@@ -34,9 +48,11 @@ function adicionarTarefa(tarefa){
 }
 
 
-//criando nova tag com as tarefas adicionadas
 function criarTag(tarefa){
+
     let li = document.createElement('li');
+//relacionando as anotaçoes a um id de tarefa
+    li.id = tarefa.id;
 
     let span = document.createElement('span');
     span.classList.add('texTarefa');
@@ -63,11 +79,22 @@ function criarTag(tarefa){
 }
 
 function edit(idTarefa){
-    alert(idTarefa);
+    let li = document.getElementById(''+idTarefa+'');
+    if(li){
+        idtarefaEdicao.innerHTML='#' + idTarefa;
+        alterarjanelaEdicao();
+    }
 }
 
+
 function delet (idTarefa){
-    alert(idTarefa);
+    let confirmacao = window.confirm('Deseja Deletar Tarefa?');
+    if(confirmacao) {
+        let li = document.getElementById(''+idTarefa+'');
+        if(li){
+            listaTarefa.removeChild(li);
+        }
+     }
 }
 
 //funçao provisoria para criar id, pois irei adicionar um banco de dados
