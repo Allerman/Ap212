@@ -1,3 +1,8 @@
+/*
+quando e id chamar com "#"
+divs sao o "." 
+*/
+
 body{
     background: #000;
     color: #fff;
@@ -49,10 +54,6 @@ body{
     cursor: pointer;
 }
 
-/*
-quando e id chamar com "#"
-divs sao o "." 
-*/
 #listaTarefa{
     list-style-type: none;
     padding: 0;
@@ -89,3 +90,114 @@ divs sao o "."
     background: #191818;
     border: 1px solid #191818;
 }
+
+#alterarjanelaEdicao{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir{
+    display: block !important;
+}
+
+#btnSairEdicao{
+    position: absolute;
+    top: -17px;
+    right: -17px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #2d2c2c;
+    background: #2d2d2d;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+#janelaEdicaoFundo{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir{
+    display: block !important;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm_linha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm_linha label{
+    margin-bottom: 7px;
+}
+
+.frm_linha input{
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: #2d2c2c;
+    color: #fff;
+}
+
+.frm_linha button{
+    background: #2d2c2c;
+    border: 1px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #ccc;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+    
+}
+
+.frm_linha button:hover{
+    background: #3c3a3a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
