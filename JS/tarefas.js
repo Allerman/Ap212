@@ -5,6 +5,7 @@ let btnSairEdicao = document.querySelector('#btnSairEdicao');
 let btnSalvarEdicao = document.querySelector('#btnSalvarEdicao');
 let tarefaEdicao = document.querySelector('#tarefaEdicao');
 let inputEdicaoNovoTexto = document.querySelector('#inputEdicaoNovoTexto');
+let mostrandoIdDaTarefa = document.querySelector('#mostrandoIdDaTarefa');
 
 //adicionar tarefa
 inputNovaTarefa.addEventListener('keypress',(e)=>{
@@ -62,25 +63,16 @@ function criarTag(tarefa){
     return li;
 }
 
-function edit(idTarefa){
-    let li = document.getElementById(''+idTarefa+'');
-    if(li){
-        idtarefaEdicao.innerHTML='#' + idTarefa;
-        alterarjanelaEdicao();
-    }
+function alterarjanelaEdicao(){
+    btnEdit.addEventListener('click',function(){
+        
+        if(popupDaEdicao.style.display === 'block'){
+            popupDaEdicao.style.display='none';
+        }
+        popupDaEdicao.style.display='block';
+    })
 }
-btnSairEdicao.addEventListener('click',(e)=>{alterarJanelaEdicao();})
 
-btnSalvarEdicao.addEventListener('click',(e)=>{
-    e.preventDefault();
-    let idTarefa = idtarefaEdicao.innerHTML.replace('#','');
-
-    let tarefa = {
-        nome: inputNovaTarefa.value,
-        id: gerarid()
-    }
-
-})
 
 function delet (idTarefa){
     let confirmacao = window.confirm('Deseja Deletar Tarefa?');
