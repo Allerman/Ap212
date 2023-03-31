@@ -14,14 +14,14 @@
 
 
 <body>
-<div class="conteudo">
+<div class="conteudoDaLista">
 
     <!--elementos para adicionar nova tarefa-->
-        <div class="topo">
+        <div class="TagGrande">
             
             <input type="text" 
                 id="inputNovaTarefa"
-                placeholder="Adicionar">
+                placeholder="O que voce quer fazer hoje?">
 
                 <button id="btnAddTarefa">
                     <!--icon-->
@@ -36,23 +36,23 @@
 </div>
 
 <!--popup de ediçao-->
-<div id="alterarjanelaEdicao">
+<div id="popupDaEdicao">
 
     <button id="btnSairEdicao">
         <i class="bi bi-trash3-fill"></i>
     </button>
 
-    <h2 id = "tarefaEdicao">#69</h2>
+    <h2 id = "mostrandoIdDaTarefa">#69</h2>
     <hr>
 
     <form>
         <div class="frm_linha">
-            <label for="nome">nome</label>
-            <input type="text" id="inputTarefaNomeEdicao">
+            <label for="Tarefa">Tarefa:</label>
+            <input type="text" id="inputEdicaoNovoTexto">
         </div>
 
         <div class="frm_linha">
-            <button id="btnAtualizarTarefa">Salvar</button>
+            <button id="btnSalvarEdicao">Salvar</button>
         </div>
     </form>
 </div>

@@ -2,9 +2,9 @@ let inputNovaTarefa = document.querySelector('#inputNovaTarefa');
 let btnAddTarefa = document.querySelector('#btnAddTarefa');
 let listaTarefa = document.querySelector('#listaTarefa');
 let btnSairEdicao = document.querySelector('#btnSairEdicao');
-let btnAtualizarTarefa = document.querySelector('#btnAtualizarTarefa');
+let btnSalvarEdicao = document.querySelector('#btnSalvarEdicao');
 let tarefaEdicao = document.querySelector('#tarefaEdicao');
-let inputTarefaNomeEdicao = document.querySelector('#inputTarefaNomeEdicao');
+let inputEdicaoNovoTexto = document.querySelector('#inputEdicaoNovoTexto');
 
 //adicionar tarefa
 inputNovaTarefa.addEventListener('keypress',(e)=>{
@@ -18,25 +18,10 @@ inputNovaTarefa.addEventListener('keypress',(e)=>{
     } 
 })
 
-btnSairEdicao.addEventListener('click',(e)=>{alterarJanelaEdicao();})
-
-btnAtualizarTarefa.addEventListener('click',(e)=>{
-    e.preventDefault();
-    let idTarefa = idtarefaEdicao.innerHTML.replace('#','');
-
-    let tarefa = {
-
-    }
-
-
-
-
-})
-
 btnAddTarefa.addEventListener('click', (e) => {
     let tarefa={ 
         nome: inputNovaTarefa.value,
-        id: gerarid(),
+        id: gerarid()
     }
         adicionarTarefa(tarefa);})
 
@@ -51,7 +36,6 @@ function adicionarTarefa(tarefa){
 function criarTag(tarefa){
 
     let li = document.createElement('li');
-//relacionando as anotaçoes a um id de tarefa
     li.id = tarefa.id;
 
     let span = document.createElement('span');
@@ -85,7 +69,18 @@ function edit(idTarefa){
         alterarjanelaEdicao();
     }
 }
+btnSairEdicao.addEventListener('click',(e)=>{alterarJanelaEdicao();})
 
+btnSalvarEdicao.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let idTarefa = idtarefaEdicao.innerHTML.replace('#','');
+
+    let tarefa = {
+        nome: inputNovaTarefa.value,
+        id: gerarid()
+    }
+
+})
 
 function delet (idTarefa){
     let confirmacao = window.confirm('Deseja Deletar Tarefa?');
