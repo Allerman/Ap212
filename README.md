@@ -1,5 +1,5 @@
 # Lista de Tarefas 
-## 🚧 under development 🚧
+## 🚧 Em breve ira para vala, e será reprogetado com ruby on rails 🚧
 
 Este é um projeto de Lista de Tarefas, que permite que o usuário adicione, edite e remova tarefas em uma lista. O projeto foi criado com o objetivo de praticar habilidades em HTML, CSS e JavaScript.
 Funcionalidades
