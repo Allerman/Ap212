@@ -102,7 +102,7 @@ body{
     width: 415px;
     border-radius: 12px;
     z-index: 200;
-    display: none;
+    display: block;
 }
 
 #popupDaEdicao.abrir{
