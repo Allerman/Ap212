@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.Conteudo{
+.container{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #b92387, #dfb21e);
@@ -30,11 +30,12 @@
 }
 
 .TagInicial img{
-width: 70px;
-margin-left: 10px;
+    width: 70px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-.Itens{
+.TagInput{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +45,7 @@ margin-left: 10px;
     margin-bottom: 25px;
 }
 
-.Itens input{
+.TagInput input{
     flex: 1;
     border: none;
     outline: none;
@@ -63,4 +64,48 @@ margin-left: 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(/oval.png);
+    background-size: cover;
+    background-position: center;
+    top: 18px;
+    left: 8px;
+}
+ul li.checked{
+    color: #b92387;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/check.png);
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #dfb21e;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #ec60bd6b;
 }
