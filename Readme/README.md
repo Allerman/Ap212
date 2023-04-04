@@ -1,37 +1,38 @@
 # Lista de Tarefas 
-## 🚧 Sendo reprogetado 🚧
+## Finalizado ✅
 
-Este é um projeto de Lista de Tarefas, que permite que o usuário adicione, marque o que foi realizado e remova tarefas em uma lista. 
-O projeto foi criado com o objetivo de praticar habilidades em HTML, CSS e JavaScript.
+Este é um projeto de To-Do List, que permite ao usuário adicionar uma task, fazer um check e remover as task da lista. 
+O projeto foi criado com o objetivo de praticar o uso da linguegem de marcaçao HTML, estilizaçao com CSS e de programaçao com JavaScript.
 
 # Funcionalidades
 
     Adicionar tarefas
-    Riscar tarefas já realizadas
+    Dar check nas tarefas realizadas
     Remover tarefas
 
-# Tecnologias Utilizadas
+# Tecnologias
+    As seguintes ferramentas foram usadas na construção do projeto:
 
     HTML
     CSS
     JavaScript
 
 # Como Usar
-    🚧 Sendo reprogetado 🚧
-Para usar a Lista de Tarefas, por enquato basta dar um git clone, abrir em sua porta padrao e começar a adicionar, riscar e remover tarefas.
-Contudo, brevemente será disponibilizado o uso no **GitHubPages**
+
+Para usar a Lista de Tarefas, por enquato, basta dar um git clone, abrir em sua porta padrao e começar a utilizar.
+Contudo, brevemente será disponibilizado o uso pelo **GitHubPages**
     
-Ao acessar, você verá uma página minimalista com o campo de input, basta digitar o nome no campo de texto e pressionar a tecla "Enter" ou clicar no botão "Add", ao ir incrementando novos itens será criado uma lista. 
-Os itens estarao disponiveis para serem riscados/marcados como concluído ou deletado.
-Para marcar, riscar uma tarefa basta clicar na mesma ou no icone circular ao lado.
-A remover da tarefa, funciona também de forma simplificada, basta clicar no icon de delete representado pelo "X".
-"Remover" ao lado da tarefa que deseja excluir.
+Ao acessar, você verá uma página minimalista com o campo de input. 
+Basta digitar a açao no campo de texto, pressionar a tecla "Enter" ou clicar no botão "Add". E desta forma novas task sao criadas. 
+Os itens estarao disponiveis para serem marcados como concluído ou deletado.
 
-# Contribuição
+- [] Terminar att de BD           *x*
+- [x] ~~Assistir the bear~~       *x*  
 
-Este projeto é aberto a contribuições e sugestões.
+Para marcar/riscar uma tarefa clique na mesma ou no icone circular ao lado.
+A remover da tarefa, funciona também de forma simplificada, ao clicar no icon de delete representado pelo "X" ao lado da tarefa que deseja excluir ela será deletada.
 
 # Autor
 
 Este projeto foi desenvolvido por Allerman Thay.
-
+<img src="./imgs/octocat-1680627320475.png" width="40" height="40"/> 
