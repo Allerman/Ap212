@@ -14,36 +14,27 @@
 
 <body>
 
-    <div class="Conteudo">
+    <div class="container">
 
         <div class="TagInicial">
             <h2>To-Do List <img src="fant.png"> </h2>
 
 
-            <div class="Itens">
+            <div class="TagInput">
                 <input type="text" id="input-box" placeholder="O que voce quer fazer?">
-
-                <button id="btnAddItem">Add</button>
-            
+                <button onclick="addTask()" id="btnAddItem">Add</button>
             </div>
 
+            <ul id="listItens">
+              <!-- <li class="checked">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li>--> 
+            </ul>
         </div>
-
-
-
-
-
-
     </div>
-    
 
 
-
-
-
-
-
-
+<script src="/JS/tarefas.js"></script>
 
 </body>
 </html>
