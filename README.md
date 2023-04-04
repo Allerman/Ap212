@@ -24,7 +24,7 @@ Faremos uso do **GitHubPages** para utilizar a Lista de Tarefas, ou voce pode da
 > [**Lista de Tarefas**](https://allerman.github.io/ListaDeTarefas/) 
     
 Ao acessar, você verá uma página minimalista com o campo de input. 
-Basta digitar a açao no campo de texto, pressionar a tecla "Enter" ou clicar no botão "Add". E desta forma novas task sao criadas. 
+Basta digitar a açao no campo de texto, pressionar a tecla "Enter" ou clicar no botão "Add". Desta forma novas task sao criadas. 
 Os itens estarao disponiveis para serem marcados como concluído ou deletado.
 
 - [ ] Terminar att de BD           
