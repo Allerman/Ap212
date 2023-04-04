@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 18px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 35px;
+    background-color: #b92387;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 35px;
+    background-color: #dfb21e;
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
