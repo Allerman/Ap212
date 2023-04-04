@@ -36,5 +36,6 @@ A remover da tarefa, funciona também de forma simplificada, ao clicar no icon d
 
 # Autor
 
-Este projeto foi desenvolvido por Allerman Thay.
-<img src="/imgs/octocat-1680627320475.png" width="100" height="100"/> 
+<img src="/imgs/octocat-1680627320475.png" width="200" height="200"/> 
+
+> Projeto desenvolvido por Allerman Thay.
