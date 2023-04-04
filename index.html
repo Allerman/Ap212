@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!--linkando o css com o html-->
-    <link rel="stylesheet" href="CSS/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Lista de Tarefas</title>
 </head>
 
-
-
 <body>
-<div class="conteudoDaLista">
 
-    <!--elementos para adicionar nova tarefa-->
-        <div class="TagGrande">
+    <div class="Conteudo">
+
+        <div class="TagInicial">
+            <h2>To-Do List <img src="fant.png"> </h2>
+
+
+            <div class="Itens">
+                <input type="text" id="input-box" placeholder="O que voce quer fazer?">
+
+                <button id="btnAddItem">Add</button>
             
-            <input type="text" 
-                id="inputNovaTarefa"
-                placeholder="O que voce quer fazer hoje?">
+            </div>
 
-                <button id="btnAddTarefa">
-                    <!--icon-->
-                    <i class="bi bi-plus-lg"></i>
-                </button>
         </div>
 
 
-        <!--lista de tarefas-->
-     <ul id="listaTarefa"></ul>
-
-        <button id="btnEdit">
-           <i class="bi bi-pencil-square"></i>
-        </button>
-        
-        <button id="btnDelet">
-           <i class="bi bi-trash3-fill"></i>
-        </button>
-</div>
-
-<!--popup de ediçao-->
-<div id="popupDaEdicao">
-
-    <button id="btnSairEdicao">
-        <i class="bi bi-trash3-fill"></i>
-    </button>
-
-    <h2 id = "mostrandoIdDaTarefa">#69</h2>
-    <hr>
-
-    <form>
-        <div class="frm_linha">
-            <label for="Tarefa">Tarefa:</label>
-            <input type="text" id="inputEdicaoNovoTexto">
-        </div>
-
-        <div class="frm_linha">
-            <button id="btnSalvarEdicao">Salvar</button>
-        </div>
-    </form>
-</div>
-
-<div id="janelaEdicaoFundo"></div>
 
 
-<!--vinculando o codigo js com o html-->
-    <script src="JS/tarefas.js"></script>
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
 
 </body>
 </html>
