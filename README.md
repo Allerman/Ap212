@@ -19,10 +19,9 @@ O projeto foi criado com o objetivo de praticar o uso da linguegem de marcaçao 
 
 # Como Usar
 
-Para usar a Lista de Tarefas, por enquato, basta dar um git clone, abrir em sua porta padrao e começar a utilizar.
-Contudo, brevemente será disponibilizado o uso pelo **GitHubPages**
-    
-    https://allerman.github.io/ListaDeTarefas/
+Faremos uso do **GitHubPages** para utilizar a Lista de Tarefas, ou voce pode dar um `git clone` neste repositorio e abrir na sua porta padrao. 
+
+> [**Lista de Tarefas**](https://allerman.github.io/ListaDeTarefas/) 
     
 Ao acessar, você verá uma página minimalista com o campo de input. 
 Basta digitar a açao no campo de texto, pressionar a tecla "Enter" ou clicar no botão "Add". E desta forma novas task sao criadas. 
