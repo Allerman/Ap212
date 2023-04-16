@@ -1,7 +1,7 @@
 # Lista de Tarefas 
 ## Finalizado ✅
 
-Este é um projeto de To-Do List, que permite ao usuário adicionar uma task, fazer um check e remover as task da lista. 
+#### Este é um projeto de To-Do List, que permite ao usuário adicionar uma task, fazer um check e remover as task da lista. 
 O projeto foi criado com o objetivo de praticar o uso da linguegem de marcaçao HTML, estilizaçao com CSS e de programaçao com JavaScript.
 
 # Funcionalidades
