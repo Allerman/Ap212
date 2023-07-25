@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Ap212</title>
+</head>
+
+
+<body>
+
+
+<div class="container">
+    
+    <h2 id="titulo">Enxoval</h2>
+
+  <div class="TagInicial">  
+    
+    <div id="quarto">
+        <ul> 
+            <h1>Quarto</h1>
+            
+            <% ListaQuarto.forEach((item)=> { %>
+            <li>
+                <%= item.item %>    
+                <button class="bntDelete" data-id="<%= item._id %>">x</button>
+            </li>
+            <%  }) %>
+        </ul>
+        <form action="/Quarto" method="post">
+            <div class="TagInput">
+                <input type="text" name="item" placeholder="add">
+                <button class="btnAddItem" type="submit">+</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="cozinha">
+        <ul> 
+            <h1>Cozinha</h1>
+            
+            <% ListaCozinha.forEach((item)=> { %>
+            <li class="check-<%= item.check %>">
+                <%= item.item %>
+                <button class="bntDelete" data-id="<%= item._id %>">x</button>
+            </li>
+            <%  }) %>
+        </ul>
+        <form action="/Cozinha" method="post">
+            <div class="TagInput">
+                <input type="text" name="item" placeholder="add">
+                <button class="btnAddItem" type="submit">+</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="lavanderia">
+        <ul> 
+            <h1>Lavanderia</h1>
+            
+            <% ListaLavanderia.forEach((item)=> { %>
+            <li>
+                <%= item.item %> 
+                <button class="bntDelete" data-id="<%= item._id %>">x</button>
+            </li>
+            <%  }) %>
+        </ul>
+        <form action="/Lavanderia" method="post">
+            <div class="TagInput">
+                <input type="text" name="item" placeholder="add">
+                <button class="btnAddItem" type="submit">+</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="banheiro">    
+        <ul> 
+            <h1>Banheiro</h1>
+            
+            <% ListaBanheiro.forEach((item)=> { %>
+            <li>
+                <%= item.item %>
+                <button class="bntDelete" data-id="<%= item._id %>">x</button>   
+            </li>
+            <%  }) %>
+        </ul>
+        <form action="/Banheiro" method="post">
+        <div class="TagInput">
+            <input type="text" name="item" placeholder="add">
+            <button class="btnAddItem" type="submit">+</button>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
