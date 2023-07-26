@@ -39,18 +39,15 @@ const updateCheck = async (req, res) => {
   try {
     const itemId = req.params.id;
 
-    let itemQ = null;
-    let itemC = null;
-    let itemL = null;
-    let itemB = null;
-
-    itemQ = await Quarto.findById(itemId);
-    itemC = await Cozinha.findById(itemId);
-    itemL = await Lavanderia.findById(itemId);
-    itemB = await Banheiro.findById(itemId);
+    const [itemQ, itemC, itemL, itemB] = await Promise.all([
+      Quarto.findById(itemId),
+      Cozinha.findById(itemId),
+      Lavanderia.findById(itemId),
+      Banheiro.findById(itemId)
+    ]);
 
     if (!itemQ && !itemC && !itemL && !itemB) {
-      return res.status(404).send({ error: "Item não encontrado no banco de dados." });
+      return res.status(404).send({ error: "Item não encontrado." });
     }
 
     if (itemQ) itemQ.check = !itemQ.check;
@@ -65,10 +62,8 @@ const updateCheck = async (req, res) => {
       itemB && itemB.save(),
     ]);
 
-
     const anchor = itemQ ? "#quarto" : (itemC ? "#cozinha" : (itemL ? "#lavanderia" : (itemB ? "#banheiro" : "")));
 
-  
     res.redirect(`/${anchor}`);
   } catch (err) {
     res.status(500).send({ error: err.message });
