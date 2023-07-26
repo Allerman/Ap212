@@ -34,36 +34,6 @@ const deleteItem = async (req, res) => {
     res.status(500).send({ error: err.message });
   }
 };
-// const updateCheck = async (req, res) => {
-//   try {
-//     const itemId = req.params.id;
-
-//     const itemQ = await Quarto.findById(itemId);
-//     const itemC = await Cozinha.findById(itemId);
-//     const itemL = await Lavanderia.findById(itemId);
-//     const itemB = await Banheiro.findById(itemId);
-
-//     if (!itemQ && !itemC && !itemL && !itemB) {
-//       return res.status(404).send({ error: "Item não encontrado no banco de dados." });
-//     }
-
-//     if (itemQ) itemQ.check = !itemQ.check;
-//     if (itemC) itemC.check = !itemC.check;
-//     if (itemL) itemL.check = !itemL.check;
-//     if (itemB) itemB.check = !itemB.check;
-
-//     await Promise.all([
-//       itemQ && itemQ.save(),
-//       itemC && itemC.save(),
-//       itemL && itemL.save(),
-//       itemB && itemB.save(),
-//     ]);
-
-//     res.redirect("/");
-//   } catch (err) {
-//     res.status(500).send({ error: err.message });
-//   }
-// };
 
 const updateCheck = async (req, res) => {
   try {
