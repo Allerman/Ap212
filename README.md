@@ -2,7 +2,7 @@
 
 #### Sobre
 
-O projeto Ap212 é uma lista de compras para o enxoval do apartamento 212. Eu e meu amor vamos morar juntos, e para saber o que precisamos comprar, decidimos criar essa lista para acompanhar em tempo real quais itens já foram comprados.
+O projeto Ap212 é uma lista de compras para o enxoval do apartamento 212. Eu e meu amor vamos morar juntos. E para saber o que precisamos comprar, decidimos criar essa lista para acompanhar em tempo real quais itens já foram ou não comprados.
 
 #### Funcionalidades
 
