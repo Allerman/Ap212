@@ -8,7 +8,7 @@ const creatItemQuarto = async (req,res)=>{
     }
     try{
         await Quarto.create(item);
-        return res.redirect("/");
+        return res.redirect("/#quarto");
     }
     catch(err){
         res.status(500).send({error: err.message});
@@ -23,7 +23,7 @@ const creatItemCozinha = async (req,res)=>{
     }
     try{
         await Cozinha.create(item);
-        return res.redirect("/");
+        return res.redirect("/#cozinha");
     }
     catch(err){
         res.status(500).send({error: err.message});
@@ -38,7 +38,7 @@ const creatItemLavanderia = async (req,res)=>{
     }
     try{
         await Lavanderia.create(item);
-        return res.redirect("/");
+        return res.redirect("/#lavanderia");
     }
     catch(err){
         res.status(500).send({error: err.message});
@@ -53,7 +53,7 @@ const creatItemBanheiro = async (req,res)=>{
     }
     try{
         await Banheiro.create(item);
-        return res.redirect("/");
+        return res.redirect("/#banheiro");
     }
     catch(err){
         res.status(500).send({error: err.message});
