@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = 3000;
 const path = require("path");
 const router = require("./routes/routes");
 const connectDB = require("./database/db");
@@ -13,4 +13,4 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(express.urlencoded());
 app.use(router);
 
-app.listen(port, ()=>{console.log(`rodando em http://localhost:${port}`)});
+app.listen(PORT, ()=>{console.log(`rodando em http://localhost:${PORT}`)});
